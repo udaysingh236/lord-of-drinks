@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lord of the Drinks</title>
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="drinks.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="/">
+        <img src="./img/logo.png" alt="Lord of the drinks logo" class="logo" />
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#">How it works</a></li>
+          <li><a class="main-nav-link" href="#">Try now</a></li>
+          <li><a class="main-nav-link" href="#">Suggest me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="section-drinks-by-filter">
+        <div class="filter-heading">
+          <h2 class="heading-secondary center-text">
+            Filter drinks by categories, ingredients, glass size and more.
+          </h2>
+        </div>
+        <div class="container filters">
+          <div class="filter">
+            <span>Filter By: </span>
+            <select name="drinks-filter" id="filter">
+              <option value="Alcoholic">Category</option>
+            </select>
+          </div>
+          <div class="filter">
+            <span>Value: </span>
+            <select name="drinks-filter" id="filter">
+              <option value="Alcoholic">Category</option>
+              <option value="Alcoholic">Category</option>
+            </select>
+          </div>
+          <div class="apply-filters">
+            <a href="" class="btn-card btn--full">Apply</a>
+          </div>
+        </div>
+      </section>
+      <section class="filtered-drinks">
+        <div class="container-grid-4 grid grid--4-cols margin-bottom-md">
+          <div class="drink">
+            <img
+              src="https://www.thecocktaildb.com/images/media/drink/2x8thr1504816928.jpg"
+              alt="Image of a drink"
+              class="drink-img"
+            />
+            <div class="drink-content">
+              <div class="drink-tag">
+                <span class="tag tag--alcoholic">Alcoholic</span>
+              </div>
+              <p class="drink-title">ABC</p>
+              <ul class="drink-ingredients">
+                <li class="drink-ingredient">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="drink-card--icon"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                    />
+                  </svg>
+                  <span>Amaretto - 1/3</span>
+                </li>
+                <li class="drink-ingredient">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="drink-card--icon"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                    />
+                  </svg>
+                  <span>Baileys irish cream - 1/3</span>
+                </li>
+                <li class="drink-ingredient">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="drink-card--icon"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                    />
+                  </svg>
+                  <span>Cognac - 1/3</span>
+                </li>
+              </ul>
+              <div class="see-details-btn">
+                <a href="" class="btn-card btn--full">See details</a>
+              </div>
+            </div>
+          </div>
+          <div class="drink">
+            <img
+              src="https://www.thecocktaildb.com/images/media/drink/xwtptq1441247579.jpg"
+              alt="Image of a drink"
+              class="drink-img"
+            />
+            <div class="drink-content">
+              <div class="drink-tag">
+                <span class="tag tag--non-alcoholic">Non alcoholic</span>
+              </div>
+              <p class="drink-title">Melya</p>
+              <ul class="drink-ingredients">
+                <li class="drink-ingredient">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="drink-card--icon"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                    />
+                  </svg>
+                  <span>Espresso</span>
+                </li>
+                <li class="drink-ingredient">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="drink-card--icon"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                    />
+                  </svg>
+                  <span>Honey - Unsweetened</span>
+                </li>
+                <li class="drink-ingredient">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="drink-card--icon"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                    />
+                  </svg>
+                  <span>Cocoa powder</span>
+                </li>
+              </ul>
+              <div class="see-details-btn">
+                <a href="" class="btn-card btn--full">See details</a>
+              </div>
+            </div>
+          </div>
+          <div class="drink">
+            <img
+              src="https://www.thecocktaildb.com/images/media/drink/metwgh1606770327.jpg"
+              alt="Image of a drink"
+              class="drink-img"
+            />
+            <div class="drink-content">
+              <div class="drink-tag">
+                <span class="tag tag--alcoholic">Alcoholic</span>
+              </div>
+              <p class="drink-title">Mojito</p>
+              <ul class="drink-ingredients">
+                <li class="drink-ingredient">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="drink-card--icon"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                    />
+                  </svg>
+                  <span>Light rum - 2-3 oz</span>
+                </li>
+                <li class="drink-ingredient">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="drink-card--icon"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                    />
+                  </svg>
+                  <span>Lime - Juice of 1</span>
+                </li>
+                <li class="drink-ingredient">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="drink-card--icon"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                    />
+                  </svg>
+                  <span>Sugar - 2 tsp</span>
+                </li>
+              </ul>
+              <div class="see-details-btn">
+                <a href="" class="btn-card btn--full">See details</a>
+              </div>
+            </div>
+          </div>
+          <div class="drink">
+            <img
+              src="https://www.thecocktaildb.com/images/media/drink/vtwyyx1441246448.jpg"
+              alt="Image of a drink"
+              class="drink-img"
+            />
+            <div class="drink-content">
+              <div class="drink-tag">
+                <span class="tag tag--alcoholic">Alcoholic</span>
+              </div>
+              <p class="drink-title">Mocha-Berry</p>
+              <ul class="drink-ingredients">
+                <li class="drink-ingredient">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="drink-card--icon"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                    />
+                  </svg>
+                  <span>Coffee - 6 oz</span>
+                </li>
+                <li class="drink-ingredient">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="drink-card--icon"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                    />
+                  </svg>
+                  <span>Chambord raspberry liqueur - 2 oz</span>
+                </li>
+                <li class="drink-ingredient">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="drink-card--icon"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                    />
+                  </svg>
+                  <span>Cocoa powder - 2 tblsp</span>
+                </li>
+              </ul>
+              <div class="see-details-btn">
+                <a href="" class="btn-card btn--full">See details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer"></footer>
+  </body>
+</html>

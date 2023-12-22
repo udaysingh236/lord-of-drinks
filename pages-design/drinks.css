@@ -1,0 +1,160 @@
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111111;
+  padding: 0 3.6rem;
+}
+
+.header .logo {
+  height: 6.2rem;
+}
+
+/* ************************************* */
+
+/* Navigation */
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4.8rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  color: #dbee49;
+  font-weight: 500;
+  font-size: 1.8rem;
+  text-decoration: none;
+  transition: all 0.1s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #ffd43b;
+}
+
+/* ********************************* */
+/* Filters */
+.filter-heading {
+  padding: 8rem 0;
+  background: linear-gradient(to right, #868e96, #ced4da);
+}
+
+.filters {
+  padding: 8rem 0;
+  text-decoration: none;
+  font-size: 2.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6.4rem;
+}
+
+.filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.filter select {
+  font-size: 2.4rem;
+  padding: 0 1.2rem;
+  border-radius: 10px;
+  background-color: white;
+  appearance: none;
+  width: 20rem;
+}
+
+/* **************************************** */
+
+/* Filtered drinks */
+.filtered-drinks {
+  padding: 4rem 0;
+}
+
+.drink {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.drink-img {
+  width: 100%;
+}
+
+.drink-content {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.drink-tag {
+  margin-bottom: 1.2rem;
+}
+
+.tag {
+  display: inline-block;
+  padding: 1.2rem;
+  border-radius: 100px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.tag--alcoholic {
+  background-color: #ffc078;
+}
+
+.tag--non-alcoholic {
+  background-color: #ffd43b;
+}
+
+.drink-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 1.6rem;
+}
+
+.drink-ingredients {
+  list-style: none;
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.drink-ingredient {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.drink-card--icon {
+  stroke: #868e96;
+  height: 24px;
+  width: 24px;
+  overflow: hidden;
+}
+
+.see-details-btn {
+  margin-top: 2rem;
+  /* align-self: center; */
+}
+
+/* ******************** */
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 8rem 0;
+  font-weight: 600;
+  font-size: 1.4rem;
+}

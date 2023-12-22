@@ -1,0 +1,247 @@
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111111;
+  padding: 0 3.6rem;
+}
+
+.header .logo {
+  height: 6.2rem;
+}
+
+/* ******************************** */
+
+/* Navigation */
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4.8rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  color: #dbee49;
+  font-weight: 500;
+  font-size: 1.8rem;
+  text-decoration: none;
+  transition: all 0.1s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #ffd43b;
+}
+
+/* ********************************* */
+
+/* HERO SECTION */
+
+.hero-section {
+  background: url(./img/hero-background.png) no-repeat center fixed;
+  background-size: cover;
+  padding: 4.8rem 0 4.8rem 0;
+  /* view port - nav bar height */
+  /* height: calc(100vh - 6.4rem); */
+}
+
+.hero {
+  max-width: 140rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0 auto;
+}
+
+.hero-text {
+  max-width: 70rem;
+  margin-top: 9.6rem;
+  padding: 0 1.8rem;
+}
+
+.hero-description {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+  color: #e9ecef;
+}
+
+.total-records {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.8rem;
+  margin: 9.6rem auto;
+}
+
+.total-record {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+  color: #e9ecef;
+}
+
+/* ********************************** */
+
+/* How Section */
+
+.section-how {
+  padding: 8rem 0;
+}
+
+.situation-number {
+  font-size: 8.6rem;
+  font-weight: 600;
+  color: #ddd;
+  margin-bottom: 1.2rem;
+}
+
+.situation-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.situation-img {
+  max-width: 70%;
+  border-radius: 100%;
+  animation-name: rotateImg;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+/* ************************************** */
+
+@keyframes rotateImg {
+  to {
+    transform: rotateY(3.142rad);
+  }
+}
+
+/* Receipes cards */
+
+.receipes-cards {
+  padding: 8rem 0;
+}
+
+.receipe {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.receipe:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+
+.receipe-img {
+  width: 100%;
+}
+
+.receipe-content {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.receipe-tag {
+  margin-bottom: 1.2rem;
+}
+
+.tag {
+  display: inline-block;
+  border-radius: 100px;
+  padding: 1.2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.tag--alcoholic {
+  background-color: #ffc078;
+}
+
+.tag--non-alcoholic {
+  background-color: #ffd43b;
+}
+
+.receipe-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+
+.receipe-attributes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.receipe--card-how-icon {
+  stroke: #ffc078;
+  height: 24px;
+  width: 24px;
+  overflow: hidden;
+}
+
+.info-receipes {
+  display: flex;
+  flex-direction: column;
+  gap: 6.4rem;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #fdf2e9;
+  padding: 3.2rem 1.6rem;
+  border-radius: 11px;
+}
+
+.receipe-attribute {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+  font-size: 1.8rem;
+}
+
+.ingredients-imgs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1.8rem;
+  row-gap: 1.8rem;
+}
+
+.ingredient-img {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  overflow: hidden;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.ingredients-imgs img:hover {
+  transform: scale(1.1);
+}
+
+.try-now-btn {
+  display: flex;
+  justify-content: center;
+}
+
+/* ************************ */
+
+.footer {
+  text-align: center;
+  padding: 8rem 0;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
