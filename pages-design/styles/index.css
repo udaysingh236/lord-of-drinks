@@ -37,12 +37,26 @@
   color: #ffd43b;
 }
 
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.mobile-nav-close,
+.mobile-nav-open {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #dbee49;
+}
+
 /* ********************************* */
 
 /* HERO SECTION */
 
 .hero-section {
-  background: url(./img/hero-background.png) no-repeat center fixed;
+  background: url(../img/hero-background.png) no-repeat center fixed;
   background-size: cover;
   padding: 4.8rem 0 4.8rem 0;
   /* view port - nav bar height */
@@ -95,6 +109,12 @@
   padding: 8rem 0;
 }
 
+.situation-grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+}
+
 .situation-number {
   font-size: 8.6rem;
   font-weight: 600;
@@ -127,6 +147,12 @@
 
 .receipes-cards {
   padding: 8rem 0;
+}
+
+.receipe-grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
 }
 
 .receipe {

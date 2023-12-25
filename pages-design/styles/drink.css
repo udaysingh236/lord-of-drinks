@@ -1,0 +1,154 @@
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111111;
+  padding: 0 3.6rem;
+}
+
+.header .logo {
+  height: 6.2rem;
+}
+
+/* ************************************* */
+
+/* Navigation */
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4.8rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  color: #dbee49;
+  font-weight: 500;
+  font-size: 1.8rem;
+  text-decoration: none;
+  transition: all 0.1s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #ffd43b;
+}
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.mobile-nav-close,
+.mobile-nav-open {
+  height: 3.2rem;
+  width: 3.2rem;
+  color: #dbee49;
+}
+
+/* ********************************* */
+
+/* drink-info */
+
+.drink-info {
+  padding: 5.4rem 0 1.8rem 0;
+}
+
+.drink-content {
+  padding-bottom: 3.2rem;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.drink-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.drink-img-col {
+  padding-right: 3.2rem;
+}
+
+.drink-img {
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.ingredients-col {
+  padding-left: 3.2rem;
+  border-left: 2px solid #dee2e6;
+}
+
+.table-grid-col--2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: flex-start;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #f8f9fa;
+  margin-bottom: 3.2rem;
+}
+
+.table-row--1,
+.table-row--2 {
+  font-size: 1.8rem;
+  padding: 1.2rem;
+  background-color: transparent;
+}
+
+.table-heading {
+  font-weight: 400;
+}
+
+.ingredient-imgs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  overflow: hidden;
+  justify-items: center;
+  align-items: center;
+  row-gap: 1.2rem;
+}
+
+.ingredient-img {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  overflow: hidden;
+  width: 60%;
+  transition: all 0.3s ease;
+}
+
+.ingredient-img:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+  justify-self: center;
+  width: 30%;
+}
+.ingredient-imgs img:hover {
+  transform: scale(1.1);
+}
+
+/* ************************** */
+/* drink-instruction */
+.drink-instruction {
+  padding: 1rem 0 6.4rem 0;
+}
+
+.drink-instruction {
+  font-size: 1.8rem;
+  line-height: 1.1;
+}
+
+/* ******************** */
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 8rem;
+  font-weight: 600;
+  font-size: 1.4rem;
+}

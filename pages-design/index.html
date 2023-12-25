@@ -12,8 +12,9 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="general.css" />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="./styles/general.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/queries.css" />
   </head>
   <body>
     <header class="header">
@@ -27,6 +28,36 @@
           <li><a class="main-nav-link" href="#">Suggest me</a></li>
         </ul>
       </nav>
+      <button class="btn-mobile-nav">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="mobile-nav-open"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"
+          />
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="mobile-nav-close"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 18 18 6M6 6l12 12"
+          />
+        </svg>
+      </button>
     </header>
     <!-- main  -->
     <main>
@@ -54,10 +85,10 @@
       <section class="section-how">
         <div class="container">
           <span class="subheading">How it Works</span>
-          <h2 class="heading-secondary">Situations when you need us</h2>
+          <h2 class="heading-secondary">Situations when you could need us</h2>
         </div>
         <!-- Situation 1 -->
-        <div class="container grid grid--2-cols">
+        <div class="container situation-grid grid--2-cols">
           <div class="situations-text-box">
             <p class="situation-number">01</p>
             <h3 class="heading-tertiary">How to make it ?</h3>
@@ -111,7 +142,7 @@
           <span class="subheading">Receipes</span>
           <h2 class="heading-secondary">Choose from more than 600+ receipes</h2>
         </div>
-        <div class="container grid grid--3-cols margin-bottom-md">
+        <div class="container receipe-grid grid--3-cols margin-bottom-md">
           <div class="receipe">
             <img
               src="https://www.thecocktaildb.com/images/media/drink/5noda61589575158.jpg"
